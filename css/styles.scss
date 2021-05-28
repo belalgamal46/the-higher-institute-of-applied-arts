@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+// header Section
+.main-head {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  background-color: black;
+  min-height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+#logo {
+  flex: 1 1 40rem;
+  padding: 1rem;
+}
+// header Section End
+
+// hero Section
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("./images/students.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-text {
+  font-size: 7rem;
+}
+
+.hero-head {
+  width: 90%;
+  margin: auto;
+  padding: 8rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 2.3rem;
+  font-size: 2rem;
+  background-color: #bd1723;
+  border: none;
+  color: white;
+  border-radius: 0.3rem;
+}
+// hero Section end
+
+// departments section
+
+#departments {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#departments div {
+  width: 25vw;
+  padding: 3rem;
+  flex: 1 1 40rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.dep-img {
+  padding: 2rem;
+  flex: 1 1 10rem;
+}
+
+.img {
+  padding: 1rem;
+  flex: 1 1 10rem;
+}
+
+p {
+  flex: 1 1 10rem;
+  padding: 3rem;
+  text-align: left;
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.industrial-design {
+  background: linear-gradient(rgba(60, 167, 79, 0.7)), url("./images/industrialDesign.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.graphic {
+  background: linear-gradient(rgba(60, 8, 11, 0.7)), url("./images/graphic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.decor {
+  background: linear-gradient(rgba(180, 168, 45, 0.7)), url("./images/decor.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fashion {
+  background: linear-gradient(rgba(230, 59, 114, 0.7)), url("./images/fashion.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 1560px) {
+  #departments {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .hero-text {
+    font-size: 5rem;
+  }
+  #logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    font-size: 1.7rem;
+  }
+
+  ul {
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 471px) {
+  .hero-text {
+    font-size: 2.3rem;
+  }
+
+  button {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+}
